@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* overflow: hidden; */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+.slider {
+    flex: 1;
+    height: 80vh;
+    margin: 5px;
+    border-radius: 20px;
+    transition: All 500ms ease-in-out;
+    position: relative;
+}
+.active {
+    flex: 10;
+    background-size: cover;
+}
+.slider.active h3 {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+.slider:hover {
+    cursor: pointer;
+}
+.slider h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+}
